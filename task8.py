@@ -4,32 +4,28 @@
 # перегрузить метод init
 
 
-class Human:
+class human:
     def __init__(self, name: str , last_name: str, age: int):
         self.name = name
         self.last_name = last_name
         self.age = age
-        
-    def run(self, run):
-        return run 
 
-class Alien(Human):
+
+class alien(human):
     def __init__(self, height: int, **kwargs):
         self.height = height
         self.Friendly = True
         super().__init__(**kwargs)
 
-    def run(self, run):
-        return run 
 
-Aliens = Alien(
+aliens = alien(
     name = 'Pol',
     last_name = 'ALien',
     age = 777,
     height = 140
 )
 
-print(Aliens.name)
-print(Aliens.last_name)
-print(Aliens.age)
-print(Aliens.height)
+print(aliens.name)
+print(aliens.last_name)
+print(aliens.age)
+print(aliens.height)
