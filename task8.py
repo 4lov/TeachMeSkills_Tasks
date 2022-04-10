@@ -18,14 +18,14 @@ class alien(human):
         super().__init__(**kwargs)
 
 
-aliens = alien(
+alien = alien(
     name = 'Pol',
     last_name = 'ALien',
     age = 777,
     height = 140
 )
 
-print(aliens.name)
-print(aliens.last_name)
-print(aliens.age)
-print(aliens.height)
+print(alien.name)
+print(alien.last_name)
+print(alien.age)
+print(alien.height)
