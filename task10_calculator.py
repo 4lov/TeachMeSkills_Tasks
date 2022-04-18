@@ -1,24 +1,40 @@
-def calculator(a, b, operation, result):
+def calculator(a, b, operation):
+  
     if operation == '+':
-        result = a + b
-        print(result)
+      return a + b
         
     
     elif operation == '-':
-        result = a - b
-        print(result)
+        return a - b
+        
     
     elif operation == '*':
-        result = a * b
-        print(result) 
-
+        return a * b
+        
     elif operation == '/':
-        result = a / b
-        print(result)
+        return a / b
 
-if __name__ == '__main__':
+while True: 
+    try:          
         a = float(input('Введите число '))
-        b = float(input('Введите число '))
+        break
+    except ValueError:
+        print('Ты не ввел число')
+while True:   
         operation = input('Введите знак +, -, *,  /,  ')
-        result = 0
-        calculator(a, b, operation, result)
+        if operation in ['+', '-', '*', '/']:
+            break
+        print('Не правильный оператор')
+while True:
+    try:          
+        b = float(input('Введите число '))
+        break
+    except ValueError:
+        print('Ты не ввел число')
+try: 
+    print(calculator(a, b ,operation))
+except ZeroDivisionError:
+    print('На 0 делить нельзя')
+
+
+    
