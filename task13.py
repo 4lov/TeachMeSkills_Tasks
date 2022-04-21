@@ -26,11 +26,11 @@ cur.execute("""INSERT INTO teachers(name, last_name, age, position)
 
 #students
 cur.execute("""CREATE TABLE IF NOT EXISTS students(
-    student_id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL,
-    last_name TEXT NOT NULL,
-    age INTEGER,
-    teacher_id INTEGER);
+   student_id INTEGER PRIMARY KEY,
+   name TEXT NOT NULL,
+   last_name TEXT NOT NULL,
+   age INTEGER,
+   teacher_id INTEGER FOREING KEY);
 """)
 
 
