@@ -31,7 +31,7 @@ cur.execute("""CREATE TABLE IF NOT EXISTS students(
    last_name TEXT NOT NULL,
    age INTEGER,
    teacher_id INTEGER, 
-   FOREING KEY student_id REFERENCES teacher_id);
+   FOREING KEY teacher_id REFERENCES teachers(id));
 """)
 
 
