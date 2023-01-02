@@ -1,9 +1,3 @@
-# создать класс
-# сделать класс наследник
-# переопределить метод родителя
-# перегрузить метод init
-
-
 class human:
     def __init__(self, name: str , last_name: str, age: int):
         self.name = name

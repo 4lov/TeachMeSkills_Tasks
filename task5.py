@@ -1,17 +1,30 @@
-#task1
-def show_car_info(engine_info):
-    def wrapper():
-        print('Зелёный цвет, седан')
-        engine_info()
-    return wrapper
+#x = lambda a, b: a ** b
+#print(x(2, 5))
 
-#task 2
-x = lambda a: a ** 2
-print(x(int(input('Введите число: '))))
+#def plus_odin(a):
+#    return a + 1
+#print (plus_odin(5))
 
-#task3
-@show_car_info
-def show_engine_info():
-    print('v8 3 литра бензин')
+#test = list(map(lambda x: x + 5, {5,6,7}))
+#print(test)
 
-show_engine_info()
+#mixed = ['apple', 'grape', 'banana',]
+#apples = {}
+#def check_is_fruit(fruit: str) -> bool:
+#    if fruit == 'apple':
+#        return fruit
+#test = list(filter(check_is_fruit, mixed))
+#print(test)
+
+#filter работает только с bool
+#test = [1,2,3,4,5,6,7,8]
+#def check_is_odd(number: int) -> bool:
+#    return number % 2 ==0
+
+#odd_numbers = list(filter(check_is_odd, test))
+#print(odd_numbers)
+
+#from functools import reduce
+#numbers = [0,1,2,3,4,5,6,7,8]
+#test_reduce = reduce(lambda a, b: a+b ,numbers)
+#print(test_reduce)

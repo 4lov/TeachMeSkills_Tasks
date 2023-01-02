@@ -1,0 +1,15 @@
+CREATE TABLE students(
+    students_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    age INTEGER,
+    
+)
+
+CREATE TABLE teacher(
+    teacher_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    last_name TEXT NULL,
+    age TEXT NULL,
+    
+)
